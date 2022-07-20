@@ -27,6 +27,20 @@ const Notepage = () => {
         setNote(data)
     }
 
+    let deleteNote = async () => {
+        fetch(`/api/delete/${id}`, {
+            method: 'DELETE',
+            'headers': {
+                'Content-Type': 'application/json'
+            }
+        })
+        navigate('/')
+        function refreshPage(){
+            window.location.reload(false)
+        }
+        refreshPage()
+        console.log('deleted')
+    }
 
 
 
@@ -59,11 +73,12 @@ const Notepage = () => {
 
 
 
+
     // let deleteNote = async () => {
-    //     fetch(`/api/delete/${id}`, {
-    //         method: 'DELETE',
+    //     fetch(`/api/notes/delete/${id}`, {
+    //         method: "DELETE",
     //         'headers': {
-    //             'Content-Type': 'applications/json'
+    //             'Content-Type': 'application/json'
     //         }
     //     })
     //     navigate('/')
@@ -72,20 +87,6 @@ const Notepage = () => {
     //     }
     //     refreshPage()
     // }
-
-    let deleteNote = async () => {
-        fetch(`/api/notes/delete/${id}`, {
-            method: "DELETE",
-            'headers': {
-                'Content-Type': 'application/json'
-            }
-        })
-        navigate('/')
-        function refreshPage(){
-            window.location.reload(false)
-        }
-        refreshPage()
-    }
 
 
 
