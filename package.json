@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy": "https://diary--app-backend.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
