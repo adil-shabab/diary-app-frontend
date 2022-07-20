@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Satisfy&family=Splash&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    padding-bottom: 25px;
+}
+.App{
+    margin-top: 25px;
+    position: relative;
+    width: 325px;
+    padding: 30px 8px 50px 8px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading{
+    font-size: 1.7rem;
+    font-family: 'Splash', cursive;
+    font-weight: bold;
+    color: rgb(208, 44, 8);
 }
+.header{
+    margin-bottom: 110px;
+}
+.notes{
+    font-family: 'Satisfy', cursive;
+    text-align: left;
+    padding-left: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 10px 10px 25px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.notes >*{
+    text-decoration: none;
+    color: purple;
+}
+
+.note{
+    font-family: 'Satisfy', cursive;
+    text-align: left;
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+textarea{
+    font-family: 'Satisfy', cursive;
+    padding: 10px;
+    width: 100%;
+    min-height: 140px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+button{
+    padding: 9px 15px;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 25px;
+    background: rgb(208, 44, 8);
+    transition: 0.6s ease;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+button:hover{
+    background: white;
+    border: 1px solid rgb(208, 44, 8);
+    color: rgb(208, 44, 8);
+}
+.icon{
+    margin-left: 15px;
+}
+.flex{
+    display: flex;
+}
+.count{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-family: 'Splash', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.add{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+.add-icon{
+    margin-left: 20px;
+}
+.content{
+    font-family: 'Finlandica', sans-serif;
+    color: black;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
