@@ -1,5 +1,5 @@
 {
-  // "homepage": "http://adil-shabab.github.io/diary-app-frontend",
+ 
   "name": "frontend",
   "proxy": "https://diary---app.herokuapp.com/",
   "version": "0.1.0",
