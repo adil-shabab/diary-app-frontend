@@ -19,7 +19,7 @@ const NoteListPage = () => {
       getNotes();
       console.log('useeffect triggered')
     };
-  }, []);
+  });
 
   let getNotes = async () => {
     let response = await fetch("/api/notes/");
