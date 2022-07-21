@@ -17,6 +17,7 @@ const NoteListPage = () => {
   useEffect(() => {
     return () => {
       getNotes();
+      console.log('useeffect triggered')
     };
   }, []);
 
@@ -25,6 +26,7 @@ const NoteListPage = () => {
     let data = await response.json();
     console.log("DATA:", data);
     setNotes(data);
+    console.log('state updated')
   };
 
   return (
