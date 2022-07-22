@@ -66,7 +66,7 @@ const Notepage = () => {
                 'Content-Type': 'application/json'
             }
         })
-        navigate('/diary-app-frontend/')
+        navigate('/')
         function refreshPage(){
             window.location.reload(false)
         }
@@ -117,7 +117,7 @@ const Notepage = () => {
         }else if(id === 'new' && note.body !== null){
             createNote()
         }
-        navigate('/diary-app-frontend/')
+        navigate('/')
 
         refreshPage()
     }
