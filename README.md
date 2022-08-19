@@ -1,4 +1,8 @@
-diary app frontend with react
+diary app
+
+frontend with react
+
+
 backend is with django
 
 ![diary app 1](https://user-images.githubusercontent.com/101416092/180378345-d3913cad-bf08-4add-a475-3d52a405a453.png)
